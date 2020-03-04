@@ -1,0 +1,19 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  padding: $base-size;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.textField {
+  margin-right: 15px;
+  flex: 0 0 70%;
+}
+
+.button {
+  text-align: center;
+  flex: 0 0 40%;
+  margin-top: 20px;
+}

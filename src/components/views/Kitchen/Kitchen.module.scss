@@ -1,0 +1,13 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  padding: $base-size;
+}
+
+.header {
+  text-align: center;
+  color: $color-main;
+  border-bottom: 1px solid $color-main;
+  padding-bottom: 5px;
+  margin: 5px;
+}
