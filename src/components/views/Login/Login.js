@@ -2,12 +2,14 @@ import React from 'react';
 
 import {Container, TextField, Button} from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import Header from '../../layout/Header/Header';
 //import PropTypes from 'prop-types';
 import styles from './Login.module.scss';
 
 const Login = () => {
   return (
     <Container maxWidth='sm'>
+      <Header title='Login' />
       <form className={styles.component} autoComplete="off">
         <TextField
           className={styles.textField}

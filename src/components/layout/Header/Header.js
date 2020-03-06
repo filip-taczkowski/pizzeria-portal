@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Header.module.scss';
 
-const Header = title => {
+const Header = props => {
   return (
-    <h1 className={styles.component}>{title}</h1>
+    <h1 className={styles.component}>{props.title}</h1>
   );
 };
 
-Header.propType = {
+Header.propTypes = {
   title: PropTypes.string,
 };
 

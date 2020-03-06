@@ -1,5 +1,9 @@
 @import '../../../styles/settings.scss';
 
 .component {
+  text-align: center;
   color: $color-main;
+  border-bottom: 1px solid $color-main;
+  padding-bottom: 5px;
+  margin: 10px 5px;
 }

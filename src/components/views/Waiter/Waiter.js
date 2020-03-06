@@ -7,6 +7,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
+import Header from '../../layout/Header/Header';
 
 const demoContent = [
   {id: '1', status: 'free', order: null},
@@ -53,6 +54,7 @@ const renderActions = status => {
 
 const Waiter = () => (
   <Paper className={styles.component}>
+    <Header title='Waiter Panel' />
     <Table>
       <TableHead>
         <TableRow>

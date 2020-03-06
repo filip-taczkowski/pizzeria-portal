@@ -7,6 +7,7 @@ import Login from './components/views/Login/Login';
 import Tables from './components/views/Tables/Tables';
 import Waiter from './components/views/Waiter/Waiter';
 import Kitchen from './components/views/Kitchen/Kitchen';
+import Booking from './components/views/Tables/Booking';
 import { StylesProvider } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
@@ -34,6 +35,7 @@ function App() {
               <Route exact path={`${process.env.PUBLIC_URL}/tables`} component={Tables} />
               <Route exact path={`${process.env.PUBLIC_URL}/waiter`} component={Waiter} />
               <Route exact path={`${process.env.PUBLIC_URL}/kitchen`} component={Kitchen} />
+              <Route exact path={`${process.env.PUBLIC_URL}/tables/booking/:id`} component={Booking}/>
             </Switch>
           </MainLayout>
         </ThemeProvider>

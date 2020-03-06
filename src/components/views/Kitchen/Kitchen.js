@@ -2,6 +2,7 @@ import React from 'react';
 //import PropTypes from 'prop-types';
 
 import {TableCell, TableRow, TableHead, Table, Paper, Toolbar, Container, TableBody, Button} from '@material-ui/core';
+import Header from '../../layout/Header/Header';
 
 import styles from './Kitchen.module.scss';
 
@@ -27,9 +28,9 @@ const renderActions = status => {
 const Kitchen = () => {
   return (
     <Container maxWidth='lg'>
+      <Header title='Kitchen Panel' />
       <Toolbar />
       <Paper className={styles.component}>
-        <h2 className={styles.header}>Kitchen</h2>
         <Table>
           <TableHead>
             <TableRow>
