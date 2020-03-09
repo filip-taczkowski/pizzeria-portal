@@ -10,6 +10,8 @@ const mockContent = [
   {id: 1, tableOrder: '1', order: ['pizza', 'coffee'], status: 'ordered'},
   {id: 2, tableOrder: '2', order: ['salad', 'pizza'], status: 'done'},
   {id: 3, tableOrder: '3', order: ['pizza', 'coffee'], status: 'ready'},
+  {id: 4, tableOrder: '3', order: ['pizza', 'beer'], status: 'ordered'},
+  {id: 5, tableOrder: '2', order: ['pizza', 'coke'], status: 'ordered'},
 ];
 
 const renderActions = status => {
@@ -34,9 +36,9 @@ const Kitchen = () => {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell>OrderId</TableCell>
+              <TableCell>Order ID</TableCell>
               <TableCell>Status</TableCell>
-              <TableCell>OrderNo</TableCell>
+              <TableCell>Table</TableCell>
               <TableCell>Order details</TableCell>
               <TableCell>Action</TableCell>
             </TableRow>
